@@ -19,7 +19,7 @@
             </StackLayout>
         </ScrollView>
         <StackLayout >
-                <Button Text="Create Account"  />
+                <Button Text="Create Account" Clicked="Button_CreateAcc" />
             </StackLayout>
         
     </StackLayout>
