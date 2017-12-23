@@ -34,7 +34,7 @@
                                         <Button Text="Edit" 
                                                 TextColor="LightBlue" 
                                                 FontSize="16"
-                                                BackgroundColor="White"/>
+                                                BackgroundColor="Azure"/>
 
                                     </StackLayout>
                                 </ViewCell>    
