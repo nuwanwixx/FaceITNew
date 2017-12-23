@@ -1,8 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="FaceIT2.ProfilePage">
-
+             x:Class="FaceIT2.ProfilePage"
+             Title="Home"
+             BackgroundColor="White"
+             >
+    <ScrollView>
     <StackLayout>
 
         <Image x:Name="profile" Aspect="AspectFill" />
@@ -12,12 +15,39 @@
         <StackLayout Padding="5,0,5,0">
             <Label Text="Description" HorizontalOptions="StartAndExpand" FontSize="20"/>
             <Label Text="Description about user goes here. User can edit this description at any time he wants" FontSize="14" />
+                <StackLayout>
+                    <ListView x:Name="myList" HasUnevenRows="True" >
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    
+                                    <StackLayout Orientation="Horizontal" Padding="5" >
+                                        <Image Source="{Binding ImageUrl}" />
+                                        <StackLayout HorizontalOptions="StartAndExpand">
+                                            <Label Text="{Binding Name}" 
+                                                   FontAttributes="Bold" 
+                                                   FontSize="18" />
+                                            <Label Text="{Binding Status}" 
+                                                   TextColor="Gray"
+                                                   FontSize="15"/>
+                                        </StackLayout>
+                                        <Button Text="Edit" 
+                                                TextColor="LightBlue" 
+                                                FontSize="16"
+                                                BackgroundColor="White"/>
 
-        </StackLayout>
+                                    </StackLayout>
+                                </ViewCell>    
+                            </DataTemplate>
+
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </StackLayout>
+            </StackLayout>
 
         </StackLayout>
     </StackLayout>
-    
-   
-   
+
+    </ScrollView>
+
 </ContentPage>
