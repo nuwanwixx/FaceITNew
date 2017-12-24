@@ -17,5 +17,6 @@ namespace FaceIT2
             InitializeComponent();
             profile.Source = ImageSource.FromResource("FaceIT2.Images.beardface.png");
         }
+
     }
 }
