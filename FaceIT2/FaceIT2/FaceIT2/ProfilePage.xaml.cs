@@ -16,7 +16,19 @@ namespace FaceIT2
         {
             InitializeComponent();
             profile.Source = ImageSource.FromResource("FaceIT2.Images.beardface.png");
+            myList.ItemsSource = new List<Contact> {
+               new Contact {Name ="Description", Status ="Description about user goes here. User can edit this description at any time he wants.", ImageUrl = "http://lorempixel.com/100/100/people/3/" },
+            new Contact { Name = "Designation", Status = "Software Engineer", ImageUrl = "http://lorempixel.com/100/100/people/4/" }
+            };
         }
 
+        private void myList_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            myList.SelectedItem = null;
+            //var contact = e.SelectedItem as Contact;
+            //DisplayAlert("Selected", contact.Name, "OK");
+        }
+
+       
     }
 }
