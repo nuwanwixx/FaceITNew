@@ -16,10 +16,8 @@ namespace FaceIT2
         {
             InitializeComponent();
             profile.Source = ImageSource.FromResource("FaceIT2.Images.beardface.png");
-            myList.ItemsSource = new List<Contact> {
-               new Contact {Name ="Description", Status ="Description about user goes here. User can edit this description at any time he wants.", ImageUrl = "http://lorempixel.com/100/100/people/3/" },
-            new Contact { Name = "Designation", Status = "Software Engineer", ImageUrl = "http://lorempixel.com/100/100/people/4/" }
-            };
+            myList.ItemsSource = GetContacts();
+            
         }
 
         private void myList_ItemSelected(object sender, SelectedItemChangedEventArgs e)
@@ -28,7 +26,39 @@ namespace FaceIT2
             //var contact = e.SelectedItem as Contact;
             //DisplayAlert("Selected", contact.Name, "OK");
         }
+        IEnumerable<Contact> GetContacts(string searchText =null)
+        {
+            var contacts = new List<Contact>
+            {
+                new Contact {Name ="Description", Status ="Description about user goes here. User can edit this description at any time he wants.", ImageUrl = "http://lorempixel.com/100/100/people/3/" },
+                new Contact { Name = "Designation", Status = "Software Engineer", ImageUrl = "http://lorempixel.com/100/100/people/4/" },
+                new Contact {Name = "Education", Status = "University of Moratuwa", ImageUrl="http://lorempixel.com/100/100/people/5/" },
+                new Contact {Name ="Hobby", Status ="Playing Chess", ImageUrl = "http://lorempixel.com/100/100/people/1/" },
+                new Contact { Name = "Location", Status = "Moratuwa, Sri Lanka", ImageUrl = "http://lorempixel.com/100/100/people/2/" },
+                
+            };
+            if (string.IsNullOrWhiteSpace(searchText))
+            {
+                return contacts;
+            }
+            else
+            {
+                return contacts.Where(c => c.Name.StartsWith(searchText));
+            }
+        }
 
        
+
+        private void SearchBar_TextChanged(object sender, TextChangedEventArgs e)
+        {
+           myList.ItemsSource  = GetContacts(e.NewTextValue);
+        }
+
+        private void MenuItem_Clicked(object sender, EventArgs e)
+        {
+            var menuItem = sender as MenuItem;
+            var contact = menuItem.CommandParameter as Contact;
+            DisplayAlert("Edit", contact.Name, "OK");
+        }
     }
 }
