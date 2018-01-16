@@ -17,10 +17,21 @@ namespace FaceIT2
             InitializeComponent();
         }
 
-        async void Button_Login(object sender, EventArgs e)
+
+       async void Button_Login(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new ProfilePage());
+            var email = EmailEntry.Text;
+
+            if (email.Contains("@") & email.Contains(".com"))
+            {
+                await Navigation.PushAsync(new ProfilePage());
+            }
+
+            else {
+                ErrorLabel.Text = "Email is not valid";
+            }
         }
+
 
         async private void Button_ForgetPassword(object sender, EventArgs e)
         {
