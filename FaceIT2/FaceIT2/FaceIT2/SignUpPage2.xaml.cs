@@ -16,5 +16,10 @@ namespace FaceIT2
         {
             InitializeComponent();
         }
+
+        private void Button_CreateAcount(object sender, EventArgs e)
+        {
+
+        }
     }
 }
