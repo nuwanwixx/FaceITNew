@@ -27,15 +27,15 @@
             </StackLayout>
        -->
 
-        <Button Text="UploadPhoto" Clicked="Button_Clicked_2"/>
+        <Button Text="UploadPhoto" Clicked="Button_UploadPhoto"/>
 
         <Label x:Name="Image"
              WidthRequest="400"
              HeightRequest="220"/>
 
-        <Button Text="Set Picture" Clicked="Button_Clicked"  />
+        <Button Text="Set Picture" Clicked="Button_Picture"  />
 
-        <Button Text="Next" Clicked="Button_Clicked_1" />
+        <Button Text="Next" Clicked="Button_Next" />
 
     </StackLayout>
     

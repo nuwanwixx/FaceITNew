@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace FaceIT2
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class SinupPage21 : ContentPage
+    public partial class SignUpPage2 : ContentPage
     {
-        public SinupPage21()
+        public SignUpPage2()
         {
             InitializeComponent();
         }

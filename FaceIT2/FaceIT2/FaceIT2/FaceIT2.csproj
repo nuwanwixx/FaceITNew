@@ -58,8 +58,8 @@
     <Compile Include="SignUpPage.xaml.cs">
       <DependentUpon>SignUpPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="SinUpPage2.xaml.cs">
-      <DependentUpon>SinUpPage2.xaml</DependentUpon>
+    <Compile Include="SignUpPage2.xaml.cs">
+      <DependentUpon>SignUpPage2.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -130,7 +130,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="SinUpPage2.xaml">
+    <EmbeddedResource Include="SignUpPage2.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
