@@ -16,8 +16,7 @@ namespace FaceIT2
         {
             InitializeComponent();
             profile.Source = ImageSource.FromResource("FaceIT2.Images.beardface.png");
-            myList.ItemsSource = GetContacts();
-            
+            myList.ItemsSource = GetContacts();           
         }
 
         private void myList_ItemSelected(object sender, SelectedItemChangedEventArgs e)
@@ -26,6 +25,7 @@ namespace FaceIT2
             //var contact = e.SelectedItem as Contact;
             //DisplayAlert("Selected", contact.Name, "OK");
         }
+
         IEnumerable<Contact> GetContacts(string searchText =null)
         {
             var contacts = new List<Contact>
@@ -46,10 +46,6 @@ namespace FaceIT2
                 return contacts.Where(c => c.Name.StartsWith(searchText));
             }
         }
-
-       
-
-      
 
         private void MenuItem_Clicked(object sender, EventArgs e)
         {

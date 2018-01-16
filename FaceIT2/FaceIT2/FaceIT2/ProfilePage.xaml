@@ -4,67 +4,52 @@
              x:Class="FaceIT2.ProfilePage"
              Title="Home">
     <ScrollView>
-        
-    <StackLayout>
+        <StackLayout>
             <StackLayout>
                 <Button Text="Search" Clicked="Search_Btn"/>
             </StackLayout>
 
-        <Image x:Name="profile" Aspect="AspectFill" />
-        <StackLayout>
-            <Label Text="User Name" FontSize="25" HorizontalOptions="CenterAndExpand" />
-        
-        <StackLayout Padding="5,0,5,0">
-                    
+            <Image x:Name="profile" Aspect="AspectFill" />
+            <StackLayout>
+                <Label Text="User Name" FontSize="25" HorizontalOptions="CenterAndExpand" />
+                <StackLayout Padding="5,0,5,0">
                     <StackLayout>
-
                         <ListView x:Name="myList"
-                              HasUnevenRows="True" 
-                              ItemSelected="myList_ItemSelected"
-                              BackgroundColor="Transparent" >
+                            HasUnevenRows="True" 
+                            ItemSelected="myList_ItemSelected"
+                            BackgroundColor="Transparent" >
 
                             <ListView.ItemTemplate>
-                            <DataTemplate>
-                                <ViewCell>
+                                <DataTemplate>
+                                    <ViewCell>
                                         <ViewCell.ContextActions>
                                             <MenuItem Text="Edit" 
-                                                      Clicked="MenuItem_Clicked"
-                                                      CommandParameter="{Binding .}"/>
+                                    Clicked="MenuItem_Clicked"
+                                    CommandParameter="{Binding .}"/>
                                         </ViewCell.ContextActions>
-
                                         <StackLayout Orientation="Horizontal" Padding="5" >
-                                        <Image Source="{Binding ImageUrl}" />
-                                        <StackLayout HorizontalOptions="StartAndExpand">
-                                            <Label Text="{Binding Name}" 
-                                                   FontAttributes="Bold" 
-                                                   FontSize="18" />
-                                            <Label Text="{Binding Status}" 
-                                                   TextColor="Gray"
-                                                   FontSize="15"/>
-                                        </StackLayout>
-                                      <!--  <Button Text="Edit" 
+                                            <Image Source="{Binding ImageUrl}" />
+                                            <StackLayout HorizontalOptions="StartAndExpand">
+                                                <Label Text="{Binding Name}" 
+                                               FontAttributes="Bold" 
+                                               FontSize="18" />
+                                                <Label Text="{Binding Status}" 
+                                               TextColor="Gray"
+                                               FontSize="15"/>
+                                            </StackLayout>
+                                            <!--  <Button Text="Edit" 
                                                 TextColor="LightBlue" 
                                                 FontSize="16"
                                                 BackgroundColor="Transparent"/>
                                         -->
-
-                                    </StackLayout>
-                                      
+                                        </StackLayout>
                                     </ViewCell>
-                            </DataTemplate>
-
-                        </ListView.ItemTemplate>
-                    </ListView>
-                        
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
                     </StackLayout>
-
-              
+                </StackLayout>
             </StackLayout>
-           
         </StackLayout>
-    </StackLayout>
-
     </ScrollView>
-
-
 </ContentPage>

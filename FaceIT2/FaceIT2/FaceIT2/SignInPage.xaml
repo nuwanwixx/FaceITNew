@@ -12,11 +12,21 @@
                 HorizontalOptions="CenterAndExpand" />
           
             <StackLayout VerticalOptions="FillAndExpand">
-                <Entry Keyboard="Email" Placeholder="Email" />
+               <Entry Keyboard="Email" Placeholder="Email" />
                 <Entry IsPassword="True" Placeholder="Password" />
             <Button Text="Login" Clicked="Button_Login" />
             <Button Text="Forget Password" Clicked="Button_ForgetPassword" />
-            
+         
+        <!--    <Button Text="UploadPhoto" Clicked="Button_Clicked"/>
+
+            <Label x:Name="Image"
+             WidthRequest="400"
+             HeightRequest="220"/>
+
+            <Button Text="Set Picture" Clicked="Button_Clicked_1"  />
+
+            <Button Text="Create Account" Clicked="Button_Clicked_2" />
+                -->
         </StackLayout>
         
         </StackLayout>

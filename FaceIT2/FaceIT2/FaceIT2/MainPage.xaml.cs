@@ -26,7 +26,7 @@ namespace FaceIT2
         */
         async void Button_SignUp(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new SignUpPage());
+            await Navigation.PushAsync(new SignUpPage2());
         }
 
         async void Button_SignIn(object sender, EventArgs e)
