@@ -49,16 +49,24 @@ namespace FaceIT2
 
        
 
-        private void SearchBar_TextChanged(object sender, TextChangedEventArgs e)
-        {
-           myList.ItemsSource  = GetContacts(e.NewTextValue);
-        }
+      
 
         private void MenuItem_Clicked(object sender, EventArgs e)
         {
             var menuItem = sender as MenuItem;
             var contact = menuItem.CommandParameter as Contact;
             DisplayAlert("Edit", contact.Name, "OK");
+        }
+
+        protected override bool OnBackButtonPressed()
+        {
+            return false;
+        }
+
+         async private void Search_Btn(object sender, EventArgs e)
+        {
+
+            await Navigation.PushAsync(new SearchPage());
         }
     }
 }

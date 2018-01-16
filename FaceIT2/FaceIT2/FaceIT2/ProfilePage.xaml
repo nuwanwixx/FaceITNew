@@ -7,7 +7,7 @@
         
     <StackLayout>
             <StackLayout>
-                <SearchBar Placeholder="Search.." TextChanged="SearchBar_TextChanged"/>
+                <Button Text="Search" Clicked="Search_Btn"/>
             </StackLayout>
 
         <Image x:Name="profile" Aspect="AspectFill" />

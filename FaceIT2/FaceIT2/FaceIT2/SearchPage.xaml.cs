@@ -10,17 +10,16 @@ using Xamarin.Forms.Xaml;
 namespace FaceIT2
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class SignUpPage : ContentPage
+    public partial class SearchPage : ContentPage
     {
-        public SignUpPage()
+        public SearchPage()
         {
             InitializeComponent();
         }
 
-        async void Button_CreateAcc(object sender, EventArgs e)
+        /*private void SearchBar_TextChanged(object sender, TextChangedEventArgs e)
         {
-            await Navigation.PushModalAsync(new ProfilePage());
-        
-        }
+            myList.ItemsSource = GetContacts(e.NewTextValue);
+        } */
     }
 }
