@@ -19,11 +19,11 @@ namespace FaceIT2
 
        
 
-        async void Button_ForgetPassword(object sender, EventArgs e)
+       /* async void Button_ForgetPassword(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new ForgetPasswordPage());
         }
-
+        */
         async void Button_SignUp(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new SignUpPage());

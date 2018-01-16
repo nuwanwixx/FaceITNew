@@ -21,5 +21,10 @@ namespace FaceIT2
         {
             await Navigation.PushAsync(new ProfilePage());
         }
+
+        async private void Button_ForgetPassword(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ForgetPasswordPage());
+        }
     }
 }

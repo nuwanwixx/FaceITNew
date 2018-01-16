@@ -15,6 +15,7 @@
                 <Entry Keyboard="Email" Placeholder="Email" />
                 <Entry IsPassword="True" Placeholder="Password" />
             <Button Text="Login" Clicked="Button_Login" />
+            <Button Text="Forget Password" Clicked="Button_ForgetPassword" />
             
         </StackLayout>
         
