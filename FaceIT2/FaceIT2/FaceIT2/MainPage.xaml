@@ -23,7 +23,7 @@
 
         <StackLayout VerticalOptions="FillAndExpand" >
             <Button Text="Sign IN" Clicked="Button_SignIn" />
-           <!--> <Button Text="Forget Password" Clicked="Button_ForgetPassword" /> -->
+          
             <Button Text="Sign UP" Clicked="Button_SignUp" />
         </StackLayout>
     </StackLayout>

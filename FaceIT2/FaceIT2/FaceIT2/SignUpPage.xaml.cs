@@ -18,13 +18,7 @@ namespace FaceIT2
             InitializeComponent();
         }
 
-        /*  async void Button_CreateAcc(object sender, EventArgs e)
-          {
-              await Navigation.PushModalAsync(new ProfilePage());
-
-          }
-          */
-
+     
         private async void Button_UploadPhoto(object sender, EventArgs e)
         {
             await CrossMedia.Current.Initialize();

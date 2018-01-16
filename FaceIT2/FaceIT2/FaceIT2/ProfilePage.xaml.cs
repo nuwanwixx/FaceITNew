@@ -54,11 +54,7 @@ namespace FaceIT2
             DisplayAlert("Edit", contact.Name, "OK");
         }
 
-        protected override bool OnBackButtonPressed()
-        {
-            return false;
-        }
-
+      
          async private void Search_Btn(object sender, EventArgs e)
         {
 

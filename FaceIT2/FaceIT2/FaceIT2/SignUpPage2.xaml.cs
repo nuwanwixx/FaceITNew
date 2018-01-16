@@ -17,7 +17,12 @@ namespace FaceIT2
             InitializeComponent();
         }
 
-        private void Button_CreateAcount(object sender, EventArgs e)
+        async private void Button_CreateAcount(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ProfilePage());
+        }
+
+        private void Button_Clicked(object sender, EventArgs e)
         {
 
         }

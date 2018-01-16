@@ -14,9 +14,6 @@
                 <Entry IsPassword="True" Placeholder="Password" />
                 <Entry IsPassword="True" Placeholder="Re-Enter Password" />
 
-               
-
-
             </StackLayout>
         </ScrollView>
 
