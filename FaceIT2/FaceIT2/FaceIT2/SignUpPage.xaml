@@ -5,33 +5,19 @@
              BackgroundColor="Azure"
              Title="Sign Up">
    
-    <StackLayout Padding="5,20,5,0">
-        <!--
-        <Label Text="Let's Create New Account"/>
-        <ScrollView>
-            <StackLayout Padding="5, 20,5,0">
-                            <Entry Keyboard="Text" Placeholder="Name" />
-                <Entry Keyboard="Email" Placeholder="Email" />
-                <Entry IsPassword="True" Placeholder="Password" />
-                <Entry IsPassword="True" Placeholder="Re-Enter Password" />
-                
-                 TO Achala: Set other entries according to the DB here onwards
-                    eg: address, telephone number etc.
-                
-                
-            </StackLayout>
-        </ScrollView>
-        
-        <StackLayout >
-                <Button Text="Create Account" Clicked="Button_CreateAcc" />
-            </StackLayout>
-       -->
+        <StackLayout Padding="5,20,5,0">
+      
 
         <Button Text="UploadPhoto" Clicked="Button_UploadPhoto"/>
 
-        <Label x:Name="Image"
+        <Button Text="Galary" Clicked="Button_Galary" /> 
+
+        <Image x:Name="MainImage"
              WidthRequest="400"
              HeightRequest="220"/>
+
+        <Label x:Name="PathLabel" />
+
 
         <Button Text="Set Picture" Clicked="Button_Picture"  />
 
