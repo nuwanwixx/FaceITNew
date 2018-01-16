@@ -18,17 +18,29 @@ namespace FaceIT2
         }
 
 
-       async void Button_Login(object sender, EventArgs e)
+        async void Button_Login(object sender, EventArgs e)
         {
             var email = EmailEntry.Text;
 
-            if (email.Contains("@") & email.Contains(".com"))
+            if (EmailEntry.Text != null)
             {
-                await Navigation.PushAsync(new ProfilePage());
-            }
 
-            else {
-                ErrorLabel.Text = "Email is not valid";
+                if (email.Contains("@") & email.Contains(".com"))
+                {
+                    await Navigation.PushAsync(new ProfilePage());
+                }
+
+
+                else
+                {
+                    ErrorLabel.Text = "Email is not valid";
+                    return;
+
+                }
+            }
+            else
+            {
+                ErrorLabel.Text = "Please Enter Email";
             }
         }
 
