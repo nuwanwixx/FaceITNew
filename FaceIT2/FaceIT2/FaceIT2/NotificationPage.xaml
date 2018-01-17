@@ -4,9 +4,20 @@
              x:Class="FaceIT2.NotificationPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome toNotification Page!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <ListView x:Name="NotificationList"
+                      HasUnevenRows="False"
+                      ItemSelected="Notification_ItemSelected"
+                      BackgroundColor="Transparent"
+                      >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        
+                        <ImageCell  ImageSource="{Binding ImageUrl}" Text="{Binding Name}" Detail="{Binding Status}" />
+                        
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                
+            </ListView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -39,11 +39,20 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="Contact.cs" />
+    <Compile Include="FaceSearchPage.xaml.cs">
+      <DependentUpon>FaceSearchPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ForgetPasswordPage.xaml.cs">
       <DependentUpon>ForgetPasswordPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="LocationSearchPage.xaml.cs">
+      <DependentUpon>LocationSearchPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="NameSearchPage.xaml.cs">
+      <DependentUpon>NameSearchPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="NotificationPage.xaml.cs">
       <DependentUpon>NotificationPage.xaml</DependentUpon>
@@ -157,6 +166,28 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="NotificationPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\lochandaka_ranathunga.png" />
+    <Content Include="Images\supunmali_ahangama.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FaceSearchPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="LocationSearchPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="NameSearchPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

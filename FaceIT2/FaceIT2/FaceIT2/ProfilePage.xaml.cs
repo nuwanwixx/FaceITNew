@@ -30,9 +30,9 @@ namespace FaceIT2
         {
             var contacts = new List<Contact>
             {
-                new Contact {Name ="Description", Status ="Description about user goes here. User can edit this description at any time he wants.", ImageUrl = "http://lorempixel.com/100/100/people/3/" },
-                new Contact { Name = "Designation", Status = "Software Engineer", ImageUrl = "http://lorempixel.com/100/100/people/4/" },
-                new Contact {Name = "Education", Status = "University of Moratuwa", ImageUrl="http://lorempixel.com/100/100/people/5/" },
+                new Contact {Name ="Description", Status ="Tech Geek. Software Engineer ", ImageUrl = "http://lorempixel.com/100/100/people/3/" },
+                new Contact { Name = "Works At", Status = "CodeGen Pvt.Ltd", ImageUrl = "http://lorempixel.com/100/100/people/4/" },
+                new Contact {Name = "Education", Status = "University of Moratuwa, Faculty of Information Technology", ImageUrl="http://lorempixel.com/100/100/people/5/" },
                 new Contact {Name ="Hobby", Status ="Playing Chess", ImageUrl = "http://lorempixel.com/100/100/people/1/" },
                 new Contact { Name = "Location", Status = "Moratuwa, Sri Lanka", ImageUrl = "http://lorempixel.com/100/100/people/2/" },
                 

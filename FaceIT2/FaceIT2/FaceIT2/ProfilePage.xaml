@@ -11,9 +11,10 @@
     </ContentPage.ToolbarItems>
     <ScrollView>
         <StackLayout>
-            <Image x:Name="profile" Aspect="AspectFill" />
+            <Image x:Name="profile" WidthRequest="360"
+                 HeightRequest="220"  />
             <StackLayout>
-                <Label Text="User Name" FontSize="25" HorizontalOptions="CenterAndExpand" />
+                <Label Text="John Snow" FontSize="25" HorizontalOptions="CenterAndExpand" />
                 <StackLayout Padding="5,0,5,0">
                     <StackLayout>
                         <ListView x:Name="myList"
