@@ -10,14 +10,8 @@ using Xamarin.Forms.Xaml;
 namespace FaceIT2
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class ForgetPasswordPage : ContentPage
+    public partial class TagPage : MasterDetailPage
     {
-        public ForgetPasswordPage()
-        {
-            InitializeComponent();
-        }
-        // set api calls
-
-      
+        
     }
 }

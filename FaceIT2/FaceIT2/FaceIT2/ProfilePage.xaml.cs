@@ -54,11 +54,14 @@ namespace FaceIT2
             DisplayAlert("Edit", contact.Name, "OK");
         }
 
-      
-         async private void Search_Btn(object sender, EventArgs e)
+        private void ToolBar_Btn1(object sender, EventArgs e)
         {
 
-            await Navigation.PushAsync(new SearchPage());
+        }
+
+        private void ToolBar_Btn2(object sender, EventArgs e)
+        {
+
         }
     }
 }

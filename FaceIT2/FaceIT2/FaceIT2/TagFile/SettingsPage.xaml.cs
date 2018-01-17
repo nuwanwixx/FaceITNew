@@ -7,21 +7,14 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace FaceIT2
+namespace FaceIT2.TagFile
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class SignUpPage2 : ContentPage
+    public partial class SettingsPage : ContentPage
     {
-        public SignUpPage2()
+        public SettingsPage()
         {
             InitializeComponent();
         }
-
-        async private void Button_CreateAcount(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new TabPage());
-        }
-
-        
     }
 }

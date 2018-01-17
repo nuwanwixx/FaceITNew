@@ -10,18 +10,15 @@ using Xamarin.Forms.Xaml;
 namespace FaceIT2
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class SignUpPage2 : ContentPage
+    public partial class TabPage : TabbedPage
     {
-        public SignUpPage2()
+        public TabPage()
         {
             InitializeComponent();
         }
-
-        async private void Button_CreateAcount(object sender, EventArgs e)
+        protected override bool OnBackButtonPressed()
         {
-            await Navigation.PushAsync(new TabPage());
+            return true;
         }
-
-        
     }
 }

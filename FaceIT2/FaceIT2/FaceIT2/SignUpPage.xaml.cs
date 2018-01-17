@@ -59,7 +59,7 @@ namespace FaceIT2
 
             if (!CrossMedia.Current.IsPickPhotoSupported)
             {
-                await DisplayAlert("oops", "pick a Photo is not supported!", "ok");
+                await DisplayAlert("oops", "Gallery is not supported!", "ok");
                 return;
             }
 
