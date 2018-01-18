@@ -25,14 +25,11 @@ namespace FaceIT2
             if (EmailEntry.Text != null)
             {
 
-                await Navigation.PushAsync(new TabPage());
-
-
-
+                
 
                 if (email.Contains("@") & email.Contains(".com"))
                 {
-                    await Navigation.PushAsync(new ProfilePage());
+                    await Navigation.PushAsync(new TabbedPage());
                 }
 
 
