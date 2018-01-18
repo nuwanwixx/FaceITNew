@@ -26,7 +26,8 @@ namespace FaceIT2
             {
 
                 await Navigation.PushAsync(new TabPage());
-            }
+
+
 
 
                 if (email.Contains("@") & email.Contains(".com"))
