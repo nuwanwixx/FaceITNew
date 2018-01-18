@@ -11,14 +11,14 @@ using Xamarin.Forms.Xaml;
 namespace FaceIT2
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class SignUpPage : ContentPage
+    public partial class FaceSearchPage : ContentPage
     {
-        public SignUpPage()
+        public FaceSearchPage()
         {
             InitializeComponent();
         }
 
-     
+
         private async void Button_UploadPhoto(object sender, EventArgs e)
         {
             await CrossMedia.Current.Initialize();
@@ -84,14 +84,14 @@ namespace FaceIT2
 
         private void Button_Picture(object sender, EventArgs e)
         {
-           
+
         }
 
-       async private void Button_Next(object sender, EventArgs e)
+         private void Button_Next(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new SignUpPage2());
+            
         }
 
-       
+
     }
 }

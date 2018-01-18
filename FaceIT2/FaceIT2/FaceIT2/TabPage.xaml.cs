@@ -10,14 +10,15 @@ using Xamarin.Forms.Xaml;
 namespace FaceIT2
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class ForgetPasswordPage : ContentPage
+    public partial class TabPage : TabbedPage
     {
-        public ForgetPasswordPage()
+        public TabPage()
         {
             InitializeComponent();
         }
-        // set api calls
-
-      
+        protected override bool OnBackButtonPressed()
+        {
+            return true;
+        }
     }
 }

@@ -7,17 +7,14 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace FaceIT2
+namespace FaceIT2.TagFile
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class ForgetPasswordPage : ContentPage
+    public partial class SettingsPage : ContentPage
     {
-        public ForgetPasswordPage()
+        public SettingsPage()
         {
             InitializeComponent();
         }
-        // set api calls
-
-      
     }
 }

@@ -10,14 +10,11 @@ using Xamarin.Forms.Xaml;
 namespace FaceIT2
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class ForgetPasswordPage : ContentPage
+    public partial class NameSearchPage : ContentPage
     {
-        public ForgetPasswordPage()
+        public NameSearchPage()
         {
             InitializeComponent();
         }
-        // set api calls
-
-      
     }
 }

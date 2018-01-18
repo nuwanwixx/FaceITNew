@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -24,6 +24,10 @@ namespace FaceIT2
 
             if (EmailEntry.Text != null)
             {
+
+                await Navigation.PushAsync(new TabPage());
+            }
+
 
                 if (email.Contains("@") & email.Contains(".com"))
                 {

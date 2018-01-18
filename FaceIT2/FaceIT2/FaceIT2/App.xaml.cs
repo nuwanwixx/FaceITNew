@@ -14,6 +14,7 @@ namespace FaceIT2
             InitializeComponent();
 
             MainPage = new NavigationPage (new MainPage());
+            //new NavigationPage(new ProfilePage());
         }
 
         protected override void OnStart()

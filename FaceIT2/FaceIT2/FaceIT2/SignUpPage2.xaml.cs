@@ -42,11 +42,11 @@ namespace FaceIT2
             {
                 ErrorLabel.Text = "Please Enter Email";
             }
-        }
 
-        private void Button_Clicked(object sender, EventArgs e)
-        {
+            await Navigation.PushAsync(new TabPage());
 
         }
+
+        
     }
 }
