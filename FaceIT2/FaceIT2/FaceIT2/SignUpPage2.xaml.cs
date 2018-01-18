@@ -19,7 +19,32 @@ namespace FaceIT2
 
         async private void Button_CreateAcount(object sender, EventArgs e)
         {
+
+            var email = EmailEntry.Text;
+
+            if (EmailEntry.Text != null)
+            {
+
+                if (email.Contains("@") & email.Contains(".com"))
+                {
+                    await Navigation.PushAsync(new ProfilePage());
+                }
+
+
+                else
+                {
+                    ErrorLabel.Text = "Email is not valid";
+                    return;
+
+                }
+            }
+            else
+            {
+                ErrorLabel.Text = "Please Enter Email";
+            }
+
             await Navigation.PushAsync(new TabPage());
+
         }
 
         

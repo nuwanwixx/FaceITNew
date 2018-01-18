@@ -10,7 +10,9 @@
         <ScrollView>
             <StackLayout Padding="5, 20,5,0">
                 <Entry Keyboard="Text" Placeholder="Name" />
-                <Entry Keyboard="Email" Placeholder="Email" />
+                <Entry x:Name="EmailEntry" Placeholder="Email" />
+                <Label x:Name="ErrorLabel"/>
+
                 <Entry IsPassword="True" Placeholder="Password" />
                 <Entry IsPassword="True" Placeholder="Re-Enter Password" />
 
