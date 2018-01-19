@@ -14,7 +14,7 @@
             <StackLayout VerticalOptions="FillAndExpand">
                <Entry x:Name="EmailEntry"  Placeholder="Email" />
                <Label x:Name="ErrorLabel"/>
-               <Entry IsPassword="True" Placeholder="Password" />
+               <Entry x:Name="PasswordEntry" IsPassword="True" Placeholder="Password" />
                 
                <Button Text="Login" Clicked="Button_Login" />
                 

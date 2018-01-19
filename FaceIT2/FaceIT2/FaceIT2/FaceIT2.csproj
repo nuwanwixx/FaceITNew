@@ -76,6 +76,7 @@
     <Compile Include="TabPage.xaml.cs">
       <DependentUpon>TabPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UserLogin.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="MainPage.xaml">
